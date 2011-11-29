@@ -1,0 +1,150 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>worldwide Trend</title>
+    <script type="text/javascript" src="/JS/html5.js" ></script>
+    <script type="text/javascript" src="/JS/jquery-1.6.2.min.js" ></script>
+    <script type="text/javascript" src="/JS/jquery-ui-1.8.16.custom.min.js" ></script>
+    <link rel="stylesheet" href="/CSS/Common.css" />
+    <link rel="stylesheet" href="/CSS/Base.css" />
+    <link rel="stylesheet" href="/CSS/jquery-ui-1.8.16.custom.css" />
+    <script type="text/javascript">
+        $(function () {
+            // Slider
+            $('#slider').slider({
+                range: true,
+                values: [17, 67]
+            });
+        });
+	</script>
+    <script type="text/javascript">
+        $(function () {
+            var dates = $("#from, #to").datepicker({
+                showButtonPanel: true,
+                dateFormat: "yy-mm-dd",
+                defaultDate: "+1w",
+                changeMonth: true,
+                numberOfMonths: 1,
+                onSelect: function (selectedDate) {
+                    var option = this.id == "from" ? "minDate" : "maxDate",
+					instance = $(this).data("datepicker"),
+					date = $.datepicker.parseDate(
+						instance.settings.dateFormat ||
+						$.datepicker._defaults.dateFormat,
+						selectedDate, instance.settings);
+                    dates.not(this).datepicker("option", option, date);
+                }
+            });
+        });
+	</script>
+    
+</head>
+<body>
+<div id="headerTop">
+<div class="center_margin center_width valign">
+    <h1>ignite</h1>
+    <nav id="nav_gnb">
+    <ul>
+    <li class="Active"><a href="Trend.html" >Trend</a></li>
+    </ul>
+    </nav>
+    <form action="#" id="formSearch">
+        <fieldset>
+        <legend>search</legend>
+        <!--SearchCondition-->
+        <div id="divSearchCondition">
+            <span class="button"><button type="button">*</button></span>
+            <div id="divSearchConditionList">
+                <ul>
+                <li><a href="">*</a></li>
+                <li><a href="">Audio</a></li>
+                <li><a href="">video</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">Images</a></li>
+                <li><a href="">Text</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--SearchCondition//-->
+        <div>
+        <input type="text" id="Search" name="Search" title="SearchKey" />
+        <input type="submit" title="search" value="Search" />
+        </div>
+        </fieldset>
+    </form>
+    <div id="divPrivate">
+        <div id="divSignIn">
+            <form action="#" id="formSignIn">
+            <fieldset>
+            <legend>Sign In</legend>
+            <label for="email">email</label>
+            <input type="text" id="email" title="email" name="email" class="sign_input"/>
+            <label for="Password">Password</label>
+            <input type="password" id="Password" title="password" name="password" class="sign_input"/>
+            <label class="remember">
+            <input type="checkbox" value="1" name="remember_me" />
+            <span>Remember me</span>
+            </label>
+            <button type="submit">Sign in</button>
+            <a href="" title="blank" target="_blank" class="forgot">Forgot it?</a>
+            </fieldset>
+            </form>
+            
+        </div>
+        <div id="divPrivateList">
+            <ul>
+            <li><a href="">sign out</a></li>
+            <li><a href="">option</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+<div>
+    <div class="date_layout">
+        <!--date-->
+        <div class="center_margin center_text date_input" id="divDate">
+            <label for="from">From</label>
+            <input type="text" id="from" name="from" value="today" class="date_in date"/>
+            <span class="date">-</span>
+            <label for="to">to</label>
+            <input type="text" id="to" name="to" value="today" class="date_in date"/>
+        </div>
+        <div id="slider" class="center_margin center_width"></div>
+        <!--date//-->
+    </div>
+    <div class="arr_layout"></div>
+    <div  class="center_margin center_width">
+        <!--repeat-->
+        <div class="article float_left">
+            <img src="/Image/icon_twitter.png" alt="twitter" class="share_mark"/>
+            
+            <h2>Bob Costas Previews World Series Game</h2>
+            <p>20,000 view</p>
+            <ul class="article_button">
+            <li><span><button>Like</button>1</span></li>
+            <li><span><button>comment</button>1</span></li>
+            </ul>
+        </div>
+
+        <div class="article float_right">
+            <img src="/Image/icon_twitter.png" alt="twitter" class="share_mark"/>
+            <img src="/Image/img.gif" alt="" class="article_img"/>
+            <h2>Bob Costas Previews World Series Game</h2>
+            <p>20,000 view</p>
+            <ul class="article_button">
+            <li><span><button>Like</button>1</span></li>
+            <li><span><button>comment</button>1</span></li>
+            </ul>
+        </div>
+        <!--repeat//-->
+    </div>
+</div>
+<div id="divFooter" class="center_margin center_width center_text">
+copyright all ignite 2011
+</div>
+
+</body>
+</html>

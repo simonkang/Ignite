@@ -1,0 +1,4 @@
+﻿#formSearch{float:left; margin-top:25px;}
+#formSearch fieldset{display:inline}
+#divSearchCondition{float:left; position:relative}
+#divSearchConditionList{background:#fff; border:solid 1px #ccc; position:absolute; top:25px; left:0; padding:10px; z-index:10; display:none }

@@ -1,0 +1,37 @@
+﻿.center_margin{margin:0 auto}
+.center_width{width:980px}
+.center_text{text-align:center;}
+.date_input{margin:10px}
+.date_layout{background:#fed055 url(/Image/bg_yellow1.gif); padding:10px}
+.arr_layout{background:url(/Image/bg_yellow_arr.gif); background-repeat:repeat-x; height:29px; width:100%}
+.valign{vertical-align:middle}
+#headerTop{background:#562e14 url(/Images/bg_top.gif); height:70px}
+h1{display:block; color:#562e14; width:250px; height:70px; float:left}
+#nav_gnb{font-family:"ArialBlack"; font-size:2em; text-align:center; float:left; height:70px; margin-right:10px}
+#nav_gnb a{color:#fed055; text-decoration:none}
+#nav_gnb li{width:107px; height:70px; background:url(/Image/bg_nav.gif); background-repeat:repeat-y; line-height:2.9em; }
+
+.article h2{font-family:"ArialRegular"; color:#000; font-size:1.5em}
+.article{width:423px; background:#fff; border:solid 1px #bbb; padding:20px; margin-bottom:30px; position:relative}
+.float_left{float:left;}
+.float_right{float:right;}
+.share_mark{position:absolute; top:0; right:0; margin-top:-1px; margin-right:-1px}
+.article_img{width:119px; height:67px; border:solid 1px #e4e4e4; float:left; margin-right:15px; margin-bottom:15px}
+.article_button{clear:both}
+.article_button li{display:inline}
+
+#divPrivate{float:right; color:#fff;}
+#divPrivateList{display:none}
+
+#formSignIn{position:relative; margin-top:13px; _margin-top:15px; margin-left:6px}
+#formSignIn label{font-size:0.9em; _letter-spacing:-1px}
+.sign_input{width:100px; border:solid 1px #7b5137}
+.remember{position:absolute; top:20px;_top:23px; left:0}
+.forgot{color:#fff; position:absolute; top:20px;_top:25px; left:185px; font-size:0.9em}
+#divFooter{clear:both}
+#divDate label{display:none;}
+.date{font-family:"ArialBlack"; color:#562e14;}
+.date_in{border:solid 1px #e8ad0f; background:#fad470; width:100px; text-align:center; padding:3px; -moz-border-radius-topleft: 4px; -webkit-border-top-left-radius: 4px; -khtml-border-top-left-radius: 4px; border-top-left-radius: 4px}
+.date_in{-moz-border-radius-topright: 4px; -webkit-border-top-right-radius: 4px; -khtml-border-top-right-radius: 4px; border-top-right-radius: 4px}
+.date_in{-moz-border-radius-bottomleft: 4px; -webkit-border-bottom-left-radius: 4px; -khtml-border-bottom-left-radius: 4px; border-bottom-left-radius: 4px}
+.date_in{-moz-border-radius-bottomright: 4px; -webkit-border-bottom-right-radius: 4px; -khtml-border-bottom-right-radius: 4px; border-bottom-right-radius: 4px}
